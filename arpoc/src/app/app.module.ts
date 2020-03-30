@@ -13,6 +13,7 @@ import { ImageEditorComponent } from './image-editor/image-editor.component';
 import { ToastUiImageEditorModule } from 'ngx-tui-image-editor';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModules } from './material-module';
+import { CustomizationReportComponent } from './activereports/customization-report/customization-report.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { MaterialModules } from './material-module';
     BloodReportComponent,
     EmployeeReportComponent,
     ImageEditorComponent,
+    CustomizationReportComponent,
   ],
   imports: [
     BrowserModule,
