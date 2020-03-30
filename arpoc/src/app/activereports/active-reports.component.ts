@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
     templateUrl: './active-reports.component.html',
 })
 export class ActiveReportComponent {
-    constructor(protected router: Router, ) { }
+    constructor(protected router: Router ) { }
     public clickPlainReport() {
       this.router.navigate(['plain-report']);
     }

@@ -1,3 +1,16 @@
-<button class="btn btn-primary" (click)="clickPlainReport()">Plain Report</button>
-<button class="btn btn-primary" (click)="clickBloodReport()">Blood Report</button>
-<button class="btn btn-primary" (click)="clickEmployeeReport()">Employee Report</button>
+<div class="example-button-row">
+    <button mat-stroked-button color="primary" (click)="clickPlainReport()">Plain Report</button>
+    <button mat-stroked-button color="primary" (click)="clickBloodReport()">Blood Report</button>
+    <button mat-stroked-button color="primary" (click)="clickEmployeeReport()">Employee Report</button>
+</div>
+<!-- <mat-tab-group mat-stretch-tabs class="example-stretched-tabs mat-elevation-z4">
+    <mat-tab label="Plain Report" >
+        <app-plain-report></app-plain-report>
+    </mat-tab>
+    <mat-tab label="Blood Report" >
+        <app-blood-report></app-blood-report>
+    </mat-tab>
+    <mat-tab label="Employee Report">
+        <app-employee-report></app-employee-report>
+    </mat-tab>
+</mat-tab-group> -->
