@@ -5,7 +5,6 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-plain-report',
   templateUrl: './plain-report.component.html',
-  styleUrls: ['./plain-report.component.css'],
   providers: [
     {
       provide: AR_EXPORTS,

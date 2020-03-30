@@ -4,6 +4,7 @@ import { ARSketchPadComponent } from './sketchpad/ar-sketchpad.component';
 import { ActiveReportComponent } from './activereports/active-reports.component';
 import { PlainReportComponent } from './activereports/plain-report/plain-report.component';
 import { BloodReportComponent } from './activereports/blood-report/blood-report.component';
+import { EmployeeReportComponent } from './activereports/employee-report/employee-report.component';
 
 
 const routes: Routes = [
@@ -12,8 +13,8 @@ const routes: Routes = [
   { path: 'sketchpad', component: ARSketchPadComponent },
   { path: 'plain-report',  component: PlainReportComponent},
   { path: 'blood-report',  component: BloodReportComponent},
+  { path: 'employee-report', component: EmployeeReportComponent},
   { path: '**', component: ActiveReportComponent },
- 
 ];
 
 @NgModule({

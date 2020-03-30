@@ -7,6 +7,7 @@ import { ARSketchPadComponent } from './sketchpad/ar-sketchpad.component';
 import { ActiveReportComponent } from './activereports/active-reports.component';
 import { BloodReportComponent } from './activereports/blood-report/blood-report.component';
 import { PlainReportComponent } from './activereports/plain-report/plain-report.component';
+import { EmployeeReportComponent } from './activereports/employee-report/employee-report.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { PlainReportComponent } from './activereports/plain-report/plain-report.
     ARSketchPadComponent,
     ActiveReportComponent,
     PlainReportComponent,
-    BloodReportComponent
+    BloodReportComponent,
+    EmployeeReportComponent,
   ],
   imports: [
     BrowserModule,

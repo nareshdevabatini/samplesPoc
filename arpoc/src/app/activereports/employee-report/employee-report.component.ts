@@ -3,8 +3,8 @@ import { ViewerComponent, AR_EXPORTS, PdfExportService, HtmlExportService, XlsxE
 import { Router } from '@angular/router';
 
 @Component({
-    selector: 'app-blood-report',
-    templateUrl: './blood-report.component.html',
+    selector: 'app-employee-report',
+    templateUrl: './employee-report.component.html',
     providers: [
         {
           provide: AR_EXPORTS,
@@ -23,13 +23,13 @@ import { Router } from '@angular/router';
         }
       ]
 })
-export class BloodReportComponent implements AfterViewInit {
+export class EmployeeReportComponent implements AfterViewInit {
     @ViewChild('reportviewer', { static: false }) reportviewer: ViewerComponent;
 
     constructor(protected router: Router, ) { }
     ngAfterViewInit() {
     this.reportviewer.init.subscribe(() => {
-        this.reportviewer.open('assets/active-reports/BloodTestResult.rdlx-json');
+        this.reportviewer.open('assets/active-reports/EmployeesList.rdlx-json');
     });
     }
 

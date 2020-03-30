@@ -14,4 +14,7 @@ export class ActiveReportComponent {
     public clickBloodReport() {
       this.router.navigate(['blood-report']);
     }
+    public clickEmployeeReport() {
+        this.router.navigate(['employee-report']);
+      }
 }
