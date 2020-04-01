@@ -1,1 +1,8 @@
-sketchpad
+<mat-grid-list cols="6" rowHeight="2:1">
+    <mat-grid-tile>
+      <button mat-raised-button color="primary" (click)="saveImage()">Save</button>
+    </mat-grid-tile>
+  </mat-grid-list>
+  <div style="height: 500px; width: 100%" id="tui-image-editor">
+    <tui-image-editor></tui-image-editor>
+  </div>

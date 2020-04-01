@@ -1,3 +1,23 @@
-<div style="height: 500px; width: 100%">
+<mat-grid-list cols="6" rowHeight="2:1">
+  <mat-grid-tile>
+    <button mat-raised-button color="primary" (click)="loadImage('front_full_male_body')">Full Body Anterior</button>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <button mat-raised-button color="primary" (click)="loadImage('back_full_male_body')">Full Body Posterior</button>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <button mat-raised-button color="primary" (click)="loadImage('male_head')">Ear, Nost & Throat</button>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <button mat-raised-button color="primary" (click)="loadImage('woman_body')">Woman Body</button>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <button mat-raised-button color="primary" (click)="loadImage('blank')">Blank Canvas</button>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <button mat-raised-button color="primary" (click)="saveImage()">Save</button>
+  </mat-grid-tile>
+</mat-grid-list>
+<div style="height: 500px; width: 100%" id="tui-image-editor">
   <tui-image-editor></tui-image-editor>
 </div>
