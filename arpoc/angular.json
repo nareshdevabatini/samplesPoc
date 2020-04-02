@@ -27,7 +27,11 @@
               "./node_modules/@angular/material/prebuilt-themes/purple-green.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/painterro/build/painterro.min.js",
+              "src/scripts/painterro-script.js"
+            ]
           },
           "configurations": {
             "production": {

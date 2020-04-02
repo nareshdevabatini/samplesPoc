@@ -22,7 +22,9 @@
     "@angular/platform-browser-dynamic": "~9.1.0",
     "@angular/router": "~9.1.0",
     "@grapecity/activereports-angular": "^1.1.0",
+    "jquery": "^3.4.1",
     "ngx-tui-image-editor": "^7.0.2",
+    "painterro": "^1.0.35",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
