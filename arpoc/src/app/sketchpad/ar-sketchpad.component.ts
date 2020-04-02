@@ -1,6 +1,7 @@
 import { Component, ViewChild, AfterViewInit } from '@angular/core';
 import { ToastUiImageEditorComponent } from 'ngx-tui-image-editor';
 import ImageEditor from "tui-image-editor";
+import { Saveimage } from '../common/save-image';
 
 @Component({
   selector: 'app-sketchpad',
@@ -31,6 +32,11 @@ export class ARSketchPadComponent implements AfterViewInit {
   }
 
   public saveImage() {
-
+    let image = this.editorComponent.editorInstance.toDataURL()
+    image = image.replace(/^data:image\/\w+;base64,/, "");
+    let d = new Saveimage();
+    const filename = this.editorComponent.editorInstance.getImageName() + "1";
+    d.download(image,filename);
   }
 }
+

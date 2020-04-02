@@ -1,6 +1,7 @@
 import { Component, ViewChild, AfterViewInit, OnInit } from '@angular/core';
 import { ToastUiImageEditorComponent } from 'ngx-tui-image-editor';
 import ImageEditor from "tui-image-editor";
+import { Saveimage } from '../common/save-image';
 
 @Component({
   selector: 'app-image-editor',
@@ -93,6 +94,10 @@ export class ImageEditorComponent implements AfterViewInit, OnInit {
   }
 
   public saveImage() {
-
+    let image = this.editorComponent.editorInstance.toDataURL()
+    image = image.replace(/^data:image\/\w+;base64,/, "");
+    let d = new Saveimage();
+    const filename = this.editorComponent.editorInstance.getImageName() + "1";
+    d.download(image,filename);
   }
 }
