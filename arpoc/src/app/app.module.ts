@@ -4,7 +4,6 @@ import { ActiveReportsModule } from '@grapecity/activereports-angular';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { ARSketchPadComponent } from './sketchpad/ar-sketchpad.component';
 import { ActiveReportComponent } from './activereports/active-reports.component';
 import { BloodReportComponent } from './activereports/blood-report/blood-report.component';
 import { PlainReportComponent } from './activereports/plain-report/plain-report.component';
@@ -14,11 +13,11 @@ import { ToastUiImageEditorModule } from 'ngx-tui-image-editor';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModules } from './material-module';
 import { CustomizationReportComponent } from './activereports/customization-report/customization-report.component';
+import { SketchModule } from './sketch/sketch.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ARSketchPadComponent,
     ActiveReportComponent,
     PlainReportComponent,
     BloodReportComponent,
@@ -33,6 +32,7 @@ import { CustomizationReportComponent } from './activereports/customization-repo
     ToastUiImageEditorModule,
     BrowserAnimationsModule,
     MaterialModules,
+    SketchModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
