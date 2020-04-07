@@ -1,0 +1,21 @@
+
+.ptro-holder-wrapper {
+    position: fixed;
+    top: 155px;
+    left: 128px;
+    width: 51%;
+    height: 67%;
+    background-color: rgba(0,0,0,.2);
+}
+
+
+@media screen and (max-width: 868px) {
+    .ptro-holder {
+        position: fixed;
+    box-shadow: 3px 3px 15px #787878;
+    left: 150px;
+    right: 100px;
+    top: 130px;
+    bottom: 110px;
+    }
+}
