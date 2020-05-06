@@ -7,11 +7,15 @@ import { ToastUiImageEditorModule } from 'ngx-tui-image-editor';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModules } from '../material-module';
 import { SketchComponent } from './sketch.component';
+import { RaphaelComponent } from './raphael/raphael.component';
+import { PhotoEditorComponent } from './photoeditor/photoeditor.component';
 
 const routes: Routes = [
   { path: '', component: SketchComponent },
   { path: 'toast', component: ToastSketchPadComponent },
   { path: 'painterro', component: PainterroComponent },
+  { path: 'photoeditor', component: PhotoEditorComponent },
+  { path: 'raphael', component: RaphaelComponent },
   { path: '**', component: SketchComponent },
 ];
 
@@ -21,7 +25,8 @@ const routes: Routes = [
     MaterialModules,
     RouterModule.forChild(routes)
   ],
-  declarations: [SketchComponent, ToastSketchPadComponent, PainterroComponent],
+  declarations: [SketchComponent, ToastSketchPadComponent,
+    PainterroComponent, RaphaelComponent, PhotoEditorComponent],
   exports: [RouterModule],
   // schemas: [
   //   CUSTOM_ELEMENTS_SCHEMA
